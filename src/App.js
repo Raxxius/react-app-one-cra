@@ -1,9 +1,11 @@
 import './App.css';
+import { useEffect, useState } from "react";
 
 function App() {
-  console.log(sessionStorage)
+ const [colour, setColour] = useState("green")
+
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor : colour}}>
       <h1>React App1</h1>
     </div>
   );
